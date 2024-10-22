@@ -1,0 +1,6 @@
+services:
+  ws.chatapp:
+    image: ${DOCKER_REGISTRY-}wschatapp
+    build:
+      context: .
+      dockerfile: ws.chatroom/Dockerfile
