@@ -1,4 +1,10 @@
-﻿public class Startup
+﻿using ws.chatapp.Middlewares;
+using ws.chatapp.Repositories;
+using ws.chatapp.Services;
+
+namespace ws.chatapp;
+
+public class Startup
 {
     public void ConfigureServices(IServiceCollection services)
     {
@@ -22,11 +28,10 @@
         }
         app.UseSwagger();
 
-        // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.)
         app.UseSwaggerUI(c =>
         {
             c.SwaggerEndpoint("/swagger/v1/swagger.json", "Chat API V1");
-            c.RoutePrefix = string.Empty; // Set the Swagger UI at the app's root
+            c.RoutePrefix = string.Empty;
         });
         app.UseWebSockets();
         app.UseMiddleware<WebSocketMiddleware>();
@@ -35,7 +40,6 @@
 
         app.UseEndpoints(endpoints =>
         {
-            // Map the WebSocket endpoint explicitly
             endpoints.MapGet("/ws", async context =>
             {
                 if (context.WebSockets.IsWebSocketRequest)

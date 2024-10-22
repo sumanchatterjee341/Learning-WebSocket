@@ -1,5 +1,8 @@
-﻿using System.Collections.Concurrent;
-using System.Net.WebSockets;
+﻿using System.Net.WebSockets;
+using ws.chatapp.Models;
+using ws.chatapp.Repositories;
+
+namespace ws.chatapp.Services;
 
 public class RoomService : IRoomService
 {

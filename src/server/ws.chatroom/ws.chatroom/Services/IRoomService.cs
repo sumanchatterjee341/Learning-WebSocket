@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Net.WebSockets;
+﻿using System.Net.WebSockets;
+using ws.chatapp.Models;
+
+namespace ws.chatapp.Services;
 
 public interface IRoomService
 {

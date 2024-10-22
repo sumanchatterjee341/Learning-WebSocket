@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ws.chatapp.Services;
+
+namespace ws.chatapp.Controllers;
 
 [ApiController]
 [Route("api/chat")]

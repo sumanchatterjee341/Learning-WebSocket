@@ -1,5 +1,9 @@
 ﻿using System.Net.WebSockets;
 using System.Text;
+using ws.chatapp.Models;
+using ws.chatapp.Services;
+
+namespace ws.chatapp.Middlewares;
 
 public class WebSocketHandler
 {

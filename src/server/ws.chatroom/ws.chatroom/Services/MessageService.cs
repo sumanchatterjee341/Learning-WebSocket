@@ -1,4 +1,9 @@
-﻿public class MessageService : IMessageService
+﻿using ws.chatapp.Models;
+using ws.chatapp.Repositories;
+
+namespace ws.chatapp.Services;
+
+public class MessageService : IMessageService
 {
     private readonly IMessageRepository _messageRepository;
 

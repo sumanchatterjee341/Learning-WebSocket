@@ -1,6 +1,7 @@
 ﻿using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
+using ws.chatapp.Models;
+
+namespace ws.chatapp.Repositories;
 
 public class InMemoryMessageRepository : IMessageRepository
 {

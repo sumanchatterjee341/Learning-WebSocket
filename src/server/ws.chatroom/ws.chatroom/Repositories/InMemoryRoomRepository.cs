@@ -1,12 +1,12 @@
 ﻿using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.WebSockets;
+using ws.chatapp.Models;
+
+namespace ws.chatapp.Repositories;
 
 public class InMemoryRoomRepository : IRoomRepository
 {
     private readonly ConcurrentDictionary<string, Room> _rooms = new();
-    //private readonly ConcurrentDictionary<string, ConcurrentBag<WebSocket>> _socketRooms = new();
     private readonly ConcurrentDictionary<WebSocket, string> _socketRooms = new();
 
     public void AddRoom(Room room) => _rooms.TryAdd(room.Id, room);

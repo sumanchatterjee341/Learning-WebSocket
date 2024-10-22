@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using ws.chatapp.Models;
+
+namespace ws.chatapp.Services;
 
 public interface IMessageService
 {

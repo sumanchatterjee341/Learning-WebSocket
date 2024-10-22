@@ -1,4 +1,6 @@
-﻿public class WebSocketMiddleware
+﻿namespace ws.chatapp.Middlewares;
+
+public class WebSocketMiddleware
 {
     private readonly RequestDelegate _next;
     private readonly WebSocketHandler _webSocketHandler;

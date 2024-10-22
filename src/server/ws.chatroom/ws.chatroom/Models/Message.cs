@@ -1,4 +1,6 @@
-﻿public class Message
+﻿namespace ws.chatapp.Models;
+
+public class Message
 {
     public string Id { get; set; }
     public string UserId { get; set; }
