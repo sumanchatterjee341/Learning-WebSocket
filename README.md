@@ -115,4 +115,4 @@ kubectl apply -f ./k8s -d
 
 ---
 
-Thank you for checking out the Chat Application! We hope you find it useful for your real-time communication needs.
+Thank you for checking out the Chat Application! I hope you find it useful for your learning in websocket usage with real-time communication needs.
